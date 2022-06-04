@@ -129,6 +129,13 @@ function draw() {
       restart.visible = true;
      //change the trex animation
       trex.changeAnimation("collided", trex_collided);
+    if (mousePressedOver(restart)) {
+      gameState = PLAY
+      obstaclesGroup.destroyEach();
+      cloudsGroup.destroyEach();
+      score = 0;
+      }
+
        
 
      
